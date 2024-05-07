@@ -1,0 +1,136 @@
+
+.element {
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  margin: 50px 0;
+}
+.element:hover {
+  background-color: blue;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  background-color:#66bb6a;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-options {
+  display: none;
+  position: absolute;
+  background-color: #dcdcdc;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1;
+}
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+.dropdown-option:last-child {
+  border-bottom: none;
+}
+/* -------4-------- */
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+
+/* ---------5----------- */
+.slide {
+  display: none;
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 300px;
+}
+/* ------------6------------ */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width:100px ;
+  background-color: green;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  cursor: move;
+}
+
+li.dragging {
+  opacity: 0.5;
+}
+
+/* -------------7-------------------- */
+.toggle {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  border-radius: 34px;
+  background-color: #ccd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s;
+}
+
+.toggle.on {
+  background-color: #66bb6a;
+}
+
+.toggle.on::before {
+  transform: translateX(26px);
+}
+/* --------------8-------------------- */
+#progress-bar {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: green;
+}
+/* ------------10----------------------- */
+.clickable-element{
+  width: 150px;
+  height: 50px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
